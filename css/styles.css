@@ -132,15 +132,25 @@ img{
 
 /* hero */
 .hero{
-    padding: 188px 0;
-    background-color: #2e2f42;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    background-image: linear-gradient(to bottom,rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url("../images/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .hero-container{
-    width: 1440px;
+    padding: 188px 0;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
+    
+
 }
 .main-title{
     max-width: 496px;
@@ -198,6 +208,19 @@ img{
 .about-us-list-item{
     width: calc((100% - 72px) / 4);
 }
+
+.our-techno{
+    width: 264px;
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.our-techno-icon{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 .about-us-list-item-title {
         font-weight: 500;
         font-size: 20px;
@@ -221,8 +244,6 @@ img{
     padding: 120px 0;
     background-color: #F4F4FD;
 }
-
-
 
 .team-list{
     display: flex;
@@ -255,12 +276,26 @@ img{
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        margin-top: 32px;
         margin-bottom: 8px;
 }
 
 .team-list-text{
-    margin-bottom: 32px;
+    margin-bottom: 8px;
+
+}
+.social-list{
+    display: flex;
+    gap: 24px;
+    margin-left: 16px;
+}
+.circle-container {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* portfolio */
@@ -312,6 +347,10 @@ img{
     padding: 100px 0;
     background-color: #2e2f42;
 }
+.footer-content{
+    display: flex;
+    gap: 120px;
+}
 .logo-footer {
         font-family: "Raleway", sans-serif;
             font-weight: 700;
@@ -339,4 +378,17 @@ img{
     margin-top: 16px;
     width: 264px;
     margin-left: 156px;
+}
+
+.social-media-title{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin-bottom:  16px;
+}
+.footer-social-list{
+    display: flex;
+    gap: 16px;
 }
